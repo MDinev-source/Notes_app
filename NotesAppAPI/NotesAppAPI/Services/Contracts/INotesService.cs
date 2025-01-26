@@ -9,6 +9,6 @@
         Task<Notes> GetNote(int id);
         Task<Notes> CreateNote(Notes note);
         Task EditNote(int id, Notes note);
-        Task DeleteProduct(int id);
+        Task DeleteNote(int id);
     }
 }
