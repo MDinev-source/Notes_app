@@ -1,10 +1,12 @@
 ﻿namespace NotesAppAPI.Services
 {
+    using System.Linq;
     using NotesAppAPI.Data;
     using NotesAppAPI.Models;
     using System.Threading.Tasks;
     using System.Collections.Generic;
     using NotesAppAPI.Services.Contracts;
+    using Microsoft.EntityFrameworkCore;
 
     public class NotesService : INotesService
     {
@@ -15,29 +17,56 @@
             this.data = data;
         }
 
-        public Task<Notes> CreateNote(Notes note)
+        public async Task<Notes> CreateNote(Notes note)
         {
-            throw new System.NotImplementedException();
+            Notes noteNew = new Notes
+            {
+                Title = note.Title,
+                Description = note.Description
+            };
+
+            this.data.Notes.Add(noteNew);
+
+            await this.data.SaveChangesAsync();
+
+            return note;
         }
 
-        public Task DeleteProduct(int id)
+        public async Task DeleteNote(int id)
         {
-            throw new System.NotImplementedException();
+            Notes noteDelete = this.data
+                .Notes
+                .FirstOrDefault(n => n.Id == id);
+
+            this.data.Remove(noteDelete);
+            await this.data.SaveChangesAsync();
         }
 
-        public Task EditNote(int id, Notes note)
+        public async Task EditNote(int id, Notes note)
         {
-            throw new System.NotImplementedException();
+            Notes noteEdit = this.data.Notes
+                .FirstOrDefault(n => n.Id == id);
+
+            noteEdit.Title = note.Title;
+            noteEdit.Description = note.Description;
+
+            await this.data.SaveChangesAsync();
         }
 
-        public Task<Notes> GetNote(int id)
+        public async Task<Notes> GetNote(int id)
         {
-            throw new System.NotImplementedException();
+            Notes noteGet = await this.data.Notes
+                .FindAsync(id);
+
+            return noteGet;
         }
 
-        public Task<IEnumerable<Notes>> GetNotes()
+        public async Task<IEnumerable<Notes>> GetNotes()
         {
-            throw new System.NotImplementedException();
+            IEnumerable<Notes> notes = await data.Notes
+                .ToListAsync();
+
+            return notes;
         }
     }
 }
