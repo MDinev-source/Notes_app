@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NWwTj+wXNXIY2Ur9asZesOpo5WPAK8tnJZJGOKzm2mbcPwdQI74kc5tLwgxqjIJAGnBFY9EozFtqAjKvAOPg2g==",
+  "dgSpecHash": "OEXreqfqzUkzgLESibMQTRIntTbjG+awE+1IKeWFB/2tD17o6XyZCo6YxcSndmTIMqcl1ipIKFaEDfqFU9QP5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Milko\\Documents\\GitHub\\Notes_app\\NotesAppAPI\\NotesAppAPI\\NotesAppAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Milko\\.nuget\\packages\\documentformat.openxml\\3.2.0\\documentformat.openxml.3.2.0.nupkg.sha512",
+    "C:\\Users\\Milko\\.nuget\\packages\\documentformat.openxml.framework\\3.2.0\\documentformat.openxml.framework.3.2.0.nupkg.sha512",
     "C:\\Users\\Milko\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Milko\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.1.0\\microsoft.aspnetcore.authentication.abstractions.2.1.0.nupkg.sha512",
     "C:\\Users\\Milko\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.1.0\\microsoft.aspnetcore.authentication.core.2.1.0.nupkg.sha512",
@@ -96,8 +98,10 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\Milko\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\Milko\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.net.nameresolution\\4.3.0\\system.net.nameresolution.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
