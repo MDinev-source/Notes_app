@@ -1,1 +1,31 @@
-<p>notes-list works!</p>
+<div class="container">
+    <h2>Notes List</h2>
+    <ul>
+      <li
+        *ngFor="let note of notes"
+        appHighlight
+      >
+        {{ note.title }} - {{ note.description }}
+        <button (click)="deleteNote(note.id)">Delete</button>
+      </li>
+    </ul>
+
+    <h3>Add New Note</h3>
+    <form (ngSubmit)="addNotes()">
+      <input
+        type="text"
+        placeholder="Note Title"
+        [(ngModel)]="newNote.title"
+        name="title"
+        required
+      />
+      <input
+        type="text" 
+        placeholder="Description" 
+        [(ngModel)]="newNote.description" 
+        name="description"
+        required
+      />
+      <button type="submit">Add Note</button>
+    </form>
+  </div>
