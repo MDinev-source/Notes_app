@@ -9,7 +9,7 @@ import { NoteService } from 'src/app/services/note.service';
 })
 export class NotesListComponent implements OnInit {
   notes: Note[] = [];
-  newNote: Note = { id: 0, tile: '', description: '' };
+  newNote: Note = { id: 0, title: '', description: '' };
 
   constructor(private noteService: NoteService) {}
 
@@ -24,10 +24,10 @@ export class NotesListComponent implements OnInit {
   }
 
   addNotes() {
-    if (this.newNote.tile && this.newNote.description) {
+    if (this.newNote.title && this.newNote.description) {
       this.noteService.addNote(this.newNote).subscribe((note) => {
         this.notes.push(note);
-        this.newNote = { id: 0, tile: '', description: '' };
+        this.newNote = { id: 0, title: '', description: '' };
       });
     }
   }

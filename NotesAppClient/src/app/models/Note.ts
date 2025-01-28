@@ -1,5 +1,5 @@
 export interface Note {
     id: number;
-    tile: string;
+    title: string;
     description: string;
   }
